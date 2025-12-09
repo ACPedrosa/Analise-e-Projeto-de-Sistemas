@@ -14,16 +14,9 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.validation.constraints.Email;
-import jakarta.validation.constraints.Max;
-import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotBlank;
-//import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.NotNull;
 import lombok.Data;
-
-/*
- * Ana Caroline Pedrosa e Silva
- * ATV02 - Bean Validation
- */
 
 @Entity
 @Data
@@ -32,41 +25,37 @@ public class Driver {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     Long id;
 
-    LocalDate birthDate;
-
-    @NotBlank(message = "O nome é obrigatório.")
-    @Min(value = 3, message = "O nome deve ter no minimo 3 caracteres")
-    @Max(value = 50, message= "O nome deve ter no maximo 50 caracteres")
+    @NotBlank(message = "Nome não pode estar em branco")
     String name;
 
+    @NotNull(message = "Data de nascimento não pode ser nula")
+    LocalDate birthDate;
 
-    @NotBlank(message = "O email é obrigatório.")
-    @Email(message = "O formato de email inválido.")
+    @NotBlank(message = "Email não pode estar em branco")
+    @Email(message = "Email inválido")
     String email;     
-    
 
-    @NotBlank(message = "O CPF é obrigatório.")
-    @CPF
+    @NotBlank(message = "CPF não pode estar em branco")
+    @CPF(message = "CPF inválido")
     String cpf;
 
-    @NotBlank
+    @NotBlank(message = "Placa não pode estar em branco")
     @PlacaValida
     String placa;
 
+    @NotNull(message = "Número não pode ser nulo")
     @Impar
     Integer numero;
 
-    @NotBlank
+    @NotBlank(message = "CNH não pode estar em branco")
     @CNHValida
     String cnh;
 
-    @NotBlank
-
+    @NotNull(message = "Ano do carro não pode ser nulo")
     @AnoFabricacaoValido
-    String anoCarro;
+    Integer anoCarro;
 
-    @NotBlank
+    @NotBlank(message = "Comentário não pode estar em branco")
     @SemPalavrasOfensivas
-    String comebirthDatentario;
-
+    String comentario;
 }

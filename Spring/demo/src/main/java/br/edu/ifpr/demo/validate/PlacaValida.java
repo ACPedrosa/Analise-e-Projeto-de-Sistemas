@@ -15,7 +15,7 @@ import jakarta.validation.Payload;
 @Target({ElementType.FIELD})
 @Retention(RetentionPolicy.RUNTIME)
 public @interface PlacaValida {
-    String message() default "Placa inválida. Utilize o padrão Mercosul";
+        String message() default "Placa invalida";
     Class<?>[] groups() default {};
     Class<? extends Payload>[] payload() default {};
 }

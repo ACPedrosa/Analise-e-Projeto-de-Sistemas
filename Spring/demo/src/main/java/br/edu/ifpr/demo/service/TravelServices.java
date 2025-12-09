@@ -34,7 +34,7 @@ public class TravelServices {
                 ));
 
         if (request.getStatus() != TravelRequestStatus.CREATED) {
-            //Erro 400 -para viagens que já estão no estado de accepted e finished
+            //Erro 400 -para viagens que já estão no estado de accepted e finised
             if (request.getStatus() == TravelRequestStatus.ACCEPTED || request.getStatus() == TravelRequestStatus.FINISHED) {
                  throw new InvalidStatusException(
                     "Viagem já está em no final (" + request.getStatus() + ")(Error 400)."
@@ -46,7 +46,7 @@ public class TravelServices {
             );
         }
 
-        //Quando motorista aceita uma viagem o estado vai para accepted
+        //Quando motorista aceita uma viagem o estado vai para acepted
         request.setStatus(TravelRequestStatus.ACCEPTED);
         return repository.save(request);
     }

@@ -14,7 +14,7 @@ import jakarta.validation.Payload;
 @Target({ ElementType.FIELD })
 @Retention(RetentionPolicy.RUNTIME)
 public @interface AnoFabricacaoValido {
-    String message() default "Ano do carro inválido";
+    String message() default "Ano Invalido";
 
     Class<?>[] groups() default {};
 

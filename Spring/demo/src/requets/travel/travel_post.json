@@ -1,0 +1,17 @@
+[
+{
+  "passengerId": 3,
+  "driverId": 1,
+  "origem": "Av. Brasil, 4500",
+  "destino": "Shopping Catuaí",
+  "status": "CREATED"
+},
+{
+  "passengerId": 1,
+  "driverId": 2,
+  "origem": "Rua das Flores, 120",
+  "destino": "Avenida Brasil, 800"
+}
+
+
+]

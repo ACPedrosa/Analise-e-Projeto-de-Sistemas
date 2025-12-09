@@ -14,7 +14,7 @@ import jakarta.validation.Payload;
 @Target({ ElementType.FIELD })
 @Retention(RetentionPolicy.RUNTIME)
 public @interface SemPalavrasOfensivas {
-    String message() default "Por favor, sem palavras ofensivas";
+    String message() default "Placa invalida";
 
     Class<?>[] groups() default {};
 

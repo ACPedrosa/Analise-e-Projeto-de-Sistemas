@@ -14,7 +14,7 @@ import jakarta.validation.Payload;
 @Target({ ElementType.FIELD })
 @Retention(RetentionPolicy.RUNTIME)
 public @interface CNHValida {
-    String message() default "CNH Inválida. Ela deve conter 11 caracteres numéricos";
+    String message() default "CNH Invalida";
 
     Class<?>[] groups() default {};
 

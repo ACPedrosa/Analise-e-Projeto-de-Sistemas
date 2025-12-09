@@ -1,0 +1,12 @@
+{
+  "id": 2,
+  "name": "Carlos Oliveira",
+  "birthDate": "1985-09-12",
+  "email": "carlos.oliveira@example.com",
+  "cpf": "11144477735",
+  "placa": "ABC1D23",
+  "numero": 13,
+  "cnh": "12345678901",
+  "anoCarro": 2018,
+  "comentario": "Motorista experiente e atencioso"
+}

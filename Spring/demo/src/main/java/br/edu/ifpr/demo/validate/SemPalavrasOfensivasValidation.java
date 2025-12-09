@@ -10,16 +10,16 @@ public class SemPalavrasOfensivasValidation implements ConstraintValidator<SemPa
 
     @Override
     public boolean isValid(String value, ConstraintValidatorContext context) {
-        List<String> palavrasProibidas = Arrays.asList(
-                "idiota",
-                "chato",
-                "besta",
-                "estranho",
-                "suspeito",
-                "bosta"
-                );
+        if (value == null || value.isBlank()) {
+            return true; // ou false, dependendo do seu caso
+        }
 
-        return (palavrasProibidas.contains(value));
+        List<String> palavrasProibidas = Arrays.asList(
+                "burro", "idiota", "lixo", "otário", "imbecil", "estúpido",
+                "vagabundo", "desgraçado", "miserável", "porco", "demente",
+                "demêcia", "abestado", "puto");
+
+        return palavrasProibidas.stream().noneMatch(p -> value.toLowerCase().contains(p));
     }
 
 }

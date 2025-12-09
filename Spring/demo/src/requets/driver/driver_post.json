@@ -1,0 +1,26 @@
+[
+{
+  "name": "Mariana Souza",
+  "birthDate": "1992-04-23",
+  "email": "mariana.souza@example.com",
+  "cpf": "987.654.321-00",
+  "placa": "XYZ9F87",
+  "numero": 27,
+  "cnh": "99887766554",
+  "anoCarro": 2020,
+  "comentario": "Excelente motorista, muito responsável"
+},
+
+{
+  "name": "Carlos Oliveira",
+  "birthDate": "1985-09-12",
+  "email": "carlos.oliveira@example.com",
+  "cpf": "11144477735",
+  "placa": "ABC1D23",
+  "numero": 13,
+  "cnh": "12345678901",
+  "anoCarro": 2018,
+  "comentario": "Motorista experiente e atencioso"
+}
+
+]

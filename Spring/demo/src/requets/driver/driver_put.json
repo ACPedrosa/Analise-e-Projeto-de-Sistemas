@@ -1,0 +1,12 @@
+{
+  "id": 1,
+  "name": "Mariana Souza",
+  "birthDate": "1992-04-23",
+  "email": "mariana.souza@example.com",
+  "cpf": "987.654.321-00",
+  "placa": "XYZ9F87",
+  "numero": 27,
+  "cnh": "99887766554",
+  "anoCarro": 2020,
+  "comentario": "Excelente motorista, muito responsável"
+}

@@ -9,13 +9,11 @@ public class AnoFabricacaoValidoValidation implements ConstraintValidator<AnoFab
 
     @Override
     public boolean isValid(Integer value, ConstraintValidatorContext context) {
-        if(value == null){
-            return false;
+        if (value == null) {
+            return false; // ou true se ano puder ser nulo
         }
-
         int year = LocalDate.now().getYear();
-
-        return (value >= 1886 && value <= year);
+        return value > 1886 && value < year;
     }
 
 }
