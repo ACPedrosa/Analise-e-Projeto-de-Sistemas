@@ -31,7 +31,7 @@ O projeto conta com validações personalizadas, integração com MySQL, e exemp
 
 - Docker Compose - para o mysql
 
-## 📁 Estrutura Geral do Projeto
+## Estrutura Geral do Projeto
 
 ``` plaintext
 src/
@@ -186,12 +186,12 @@ Erros personalizados voltados para as requisições HTTP de viagem.
 
 ------------------------------------------------------------------------
 
-## ▶️ Como Executar
+## Como Executar
 
 1.  Vá até Spring/demo
 
     ``` bash
-        cd Spring/demo
+    cd Spring/demo
     ```
 
 2. Rode o comando:
