@@ -80,7 +80,7 @@ src/
 
 ------------------------------------------------------------------------
 
-## 📌 Pasta `request/` 
+## Pasta `request/` 
 
 A pasta `request/` contém **todos os dados utilizados durante os testes
 da API**. Dentro desse diretório, há outros que correspondem aos passageiros, motoristas e viagens.
